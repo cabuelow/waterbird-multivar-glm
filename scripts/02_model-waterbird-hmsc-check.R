@@ -38,7 +38,7 @@ hist(gelman.diag(mpost$Beta, multivariate=FALSE)$psrf, main="psrf(beta)")
 
 # option 2 (>10 species)
 
-ns <- ncol(y)
+ns <- ncol(m$Y)
 sppairs <- matrix(sample(x = 1:ns^2, size = 100))
 tmp <- mpost$Omega[[1]]
 for (chain in 1:length(tmp)){
