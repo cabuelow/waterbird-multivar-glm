@@ -4,11 +4,11 @@
 
 library(Hmsc)
 library(tidyverse)
-source('scripts/functions/rand-quantile-function.R')
+source('functions/rand-quantile-function.R')
 
 # load model
 
-m <- readRDS('outputs/models/mod-pesticide_spatialRF.rds')
+m <- readRDS('outputs/models/mod-spatialRF.rds')
 m
 
 # check mcmc convergence
